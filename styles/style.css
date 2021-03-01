@@ -9,23 +9,347 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
+.header { /* БЛОК HEADER */
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid red;
+  position: relative;
+  background-color: #f2f2f2;
+  justify-content: center; 
+  
+
   /* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
+.logo_place_header { /* Логотип Яндекса */
+  width: 183px;
+  height: 32px;
+  top: 30px;
+  margin-left: 64px;
+  position: absolute;
+  z-index: 2;
+  border: 2px solid red;
+}
+
+.header__title { /* Научиться учиться */
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  width: 730px;
+  left: 64px;
+  z-index: 2;
+  position: absolute;
+  border: 2px solid red;
+}
+
+.header__subtitle { /* Вопрос обучения */
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  width: 388px;
+  margin-left: 64px;
+  bottom: 30px;
+  position: absolute;
+  z-index: 12; /* ????????????????????????????????????? */
+  border: 2px solid red;
+
+}
+
+.header__link { /* Ссылка обучения */
+  color:#2f80ed;
+  border: 2px solid red;
+
+}
+
+.header__main-illustration { /* Картина "Опять двойка" */
+
+  width: 765px;
+  height: 608px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+  border: 2px solid red;
+}
+
+.header__square-pic { /* Синий квадрат */
   height: 568px;
   width: 568px;
+  background: #2f80ed;
+  top: 64px;
+  right: 0;
+  position: absolute;
+  border: 2px solid red
+}
+
+.description {  /* БЛОК DESCRIPTION */
+  border: 2px solid red;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  position: relative;
+  width: 80%; 
+  min-width: 784px;
+  
+}
+
+.description__two-columns { /* Таблица полностью */
+ 
+ border: 4px solid sienna;
+ display: flex;
+ justify-content: space-between;
+ 
+
+}
+
+.description__two-columns_brief { /* Заголовок таблицы Главные проблемы в обучении */
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+  color:  #2f80ed;
+  width: 175px;
+  border: 3px solid yellow;
+  text-align: start;
+}
+
+.description__two-columns_main-text { /*Текст проблемы в обучении */
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+  border: 2px solid green;
+  width: 80%; 
+  
+  
+}
+
+.description__two-columns_paragraph { 
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+  border: 2px solid blue;
+}
+
+.description__two-columns_paragraph_one { /* Первая строчка */
+ 
+}
+
+.description__two-columns_paragraph_two { /* Вторая строчка */
+  margin-top: 30px;
+   
+  
+}
+.description__two-columns_paragraph_three { /* Третья строчка */
+  margin-top: 30px;
+ 
+}
+
+.description__two-columns_span-accent { /* Выделение */
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.digits { /* СЕКЦИЯ ЦИФРЫ И ФАКТЫ */
+  margin-top: 100px;
+  border: 4px solid rgba(17, 207, 17, 0.986);
+  
+  
+  
+}
+
+.digits__section-title { /* Заголовок всей секции Цифры и факты*/
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  width: 60%;
+  
+  margin: 100px auto 20px auto;
+  text-align: center;
+}
+
+.digits__section-subtitle { /* Подзаголовок всей секции Про учёбу и мозг*/
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.digits__table { /* Таблица полностью. Флексы Ровнять здесь */
+  width: 1100px;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  
+  
+}
+
+.table__cell {  /* Ячейка таблицы полностью */
+  
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading { /* Заголовок ячейки */
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.table__text { /* Текст ячейки */
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;  
+}
+
+.paragraph__cell-text {
+  margin-top: 20px;
+}
+
+
+
+/* Ричард Филлипс Фейнман*/
+.feynman {
+  min-height: 790px;
+  margin-top: 100px;
+  border: 2px solid red;
+  /* display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px; &&????????????????????????????????????????????*/
+  
+  
+  
+}
+
+.feynman__title {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  text-align: center;
+  width: 648px;
+  border: 2px solid red; 
+  margin-top: 100px;
+  
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 70px;
+  border: 2px solid red;
+  
+  }
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: 400;
+  color:#2f80ed;
+  text-decoration: none;
+  border: 2px solid red;
+ 
+
+}
+
+.feynman__photo {
+  width: 867px;
+  height: 637px;
+ 
+  
+  
+}
+
+
+.kaufman { /* КАУФМАН */
+  background-color: #1f1f1f;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-bottom: 90px;
+
+
+}
+
+.section-title_theme_dark { /* Заголовок Принципы обучения*/ 
+  color: white;
+  width: 60%;
+  border: solid 2px white;
+  margin: auto;
+  text-align: center;
+  margin-top: 90px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.section-subtitle_theme_dark { /* Подзаголовок от Дж. Кауфмана*/ 
+  color: white;
+  width: 60%;
+  border: solid 2px white;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.table__theme_dark { /* Таблица полностью Дж. Кауфмана*/
+  border: solid 2px red;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  margin: auto;
+  
 }
 
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+.table__cell_theme_dark { /* Ячейка полностью Дж. Кауфмана*/
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  border: solid 2px red;
+  width: 200px;
+}
+
+.table__heading_theme_dark { /* Номер ячейки*/
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  justify-content: left;
+  border: solid 2px blue;
+
+}
+.table__text_theme_dark { /* Текст внутри ячейки*/
+  border: solid 2px red;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.kaufman__triangle { /* Треугольник им. Дж. Кауфмана*/
+  
+  position: absolute;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+  z-index: 1;
 }
