@@ -123,16 +123,6 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 400;
 }
 
-
-}
-
-.description__two-columns_span-accent { /* Выделение */
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: 600;
-  
-}
-
 .digits { /* СЕКЦИЯ ЦИФРЫ И ФАКТЫ */
   margin-top: 100px;
 }
@@ -343,9 +333,6 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 25px;
   font-size: 18px;
   font-weight: 400;
-}
-
-.footer__column_content_info { /*Правая колонка футера главная концепция наставники  */
 }
 
 .footer__column-heading { /*Заглавие ссылок  */
