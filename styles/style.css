@@ -8,6 +8,10 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
 
 .header { /* БЛОК HEADER */
   height: 100vh;
@@ -16,23 +20,22 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 2px solid red;
   position: relative;
   background-color: #f2f2f2;
   justify-content: center; 
-  
-
   /* выше установили ограничения для секции */
 }
 
-.logo_place_header { /* Логотип Яндекса */
+.logo {
   width: 183px;
   height: 32px;
+}
+
+.logo__place_header { /* Логотип Яндекса */
   top: 30px;
   margin-left: 64px;
   position: absolute;
   z-index: 2;
-  border: 2px solid red;
 }
 
 .header__title { /* Научиться учиться */
@@ -43,7 +46,6 @@
   left: 64px;
   z-index: 2;
   position: absolute;
-  border: 2px solid red;
 }
 
 .header__subtitle { /* Вопрос обучения */
@@ -54,26 +56,21 @@
   margin-left: 64px;
   bottom: 30px;
   position: absolute;
-  z-index: 12; /* ????????????????????????????????????? */
-  border: 2px solid red;
+  z-index: 4;
 
 }
 
 .header__link { /* Ссылка обучения */
   color:#2f80ed;
-  border: 2px solid red;
-
 }
 
 .header__main-illustration { /* Картина "Опять двойка" */
-
   width: 765px;
   height: 608px;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: 1;
-  border: 2px solid red;
 }
 
 .header__square-pic { /* Синий квадрат */
@@ -83,11 +80,9 @@
   top: 64px;
   right: 0;
   position: absolute;
-  border: 2px solid red
 }
 
 .description {  /* БЛОК DESCRIPTION */
-  border: 2px solid red;
   margin-top: 100px;
   margin-bottom: 100px;
   margin-right: auto;
@@ -96,16 +91,11 @@
   position: relative;
   width: 80%; 
   min-width: 784px;
-  
 }
 
 .description__two-columns { /* Таблица полностью */
- 
- border: 4px solid sienna;
  display: flex;
- justify-content: space-between;
- 
-
+ justify-content: space-around;
 }
 
 .description__two-columns_brief { /* Заголовок таблицы Главные проблемы в обучении */
@@ -114,54 +104,37 @@
   font-weight: 400;
   color:  #2f80ed;
   width: 175px;
-  border: 3px solid yellow;
   text-align: start;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  left: 0;
 }
 
 .description__two-columns_main-text { /*Текст проблемы в обучении */
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
-  border: 2px solid green;
-  width: 80%; 
-  
-  
+  width: 80%;
 }
 
 .description__two-columns_paragraph { 
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
-  border: 2px solid blue;
 }
 
-.description__two-columns_paragraph_one { /* Первая строчка */
- 
-}
 
-.description__two-columns_paragraph_two { /* Вторая строчка */
-  margin-top: 30px;
-   
-  
-}
-.description__two-columns_paragraph_three { /* Третья строчка */
-  margin-top: 30px;
- 
 }
 
 .description__two-columns_span-accent { /* Выделение */
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
-  margin-top: 30px;
+  
 }
 
 .digits { /* СЕКЦИЯ ЦИФРЫ И ФАКТЫ */
   margin-top: 100px;
-  border: 4px solid rgba(17, 207, 17, 0.986);
-  
-  
-  
 }
 
 .digits__section-title { /* Заголовок всей секции Цифры и факты*/
@@ -169,7 +142,6 @@
   font-size: 60px;
   font-weight: 600;
   width: 60%;
-  
   margin: 100px auto 20px auto;
   text-align: center;
 }
@@ -181,24 +153,23 @@
   width: 60%;
   margin: auto;
   text-align: center;
-  
 }
 
-.digits__table { /* Таблица полностью. Флексы Ровнять здесь */
+.table { /* Таблица полностью. Флексы Ровнять здесь */
   width: 1100px;
   display: flex;
   margin: auto;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 100px;
-  
-  
 }
 
 .table__cell {  /* Ячейка таблицы полностью */
-  
   width: 250px;
   margin-top: 60px;
+  margin-right: 0;
+  margin-top: 80px;
+  list-style-type: none;
 }
 
 .table__heading { /* Заголовок ячейки */
@@ -218,22 +189,13 @@
   margin-top: 20px;
 }
 
-
-
-/* Ричард Филлипс Фейнман*/
+/* Ричард Филлипс Фейнман */
 .feynman {
-  min-height: 790px;
-  margin-top: 100px;
-  border: 2px solid red;
-  /* display: flex;
-  flex-direction: column;
+  display: flex;
   position: relative;
-  align-items: center;
   flex-direction: column;
-  padding-top: 100px; &&????????????????????????????????????????????*/
-  
-  
-  
+  height: 790px;
+  margin-top: 100px;
 }
 
 .feynman__title {
@@ -242,9 +204,8 @@
   font-weight: 600;
   text-align: center;
   width: 648px;
-  border: 2px solid red; 
-  margin-top: 100px;
-  
+  align-self: center;
+  z-index: 2;
 }
 
 .feynman__subtitle {
@@ -252,9 +213,7 @@
   font-size: 36px;
   font-weight: 400;
   text-align: center;
-  margin-top: 70px;
-  border: 2px solid red;
-  
+  z-index: 2;
   }
 
 .feynman__link {
@@ -263,19 +222,20 @@
   font-weight: 400;
   color:#2f80ed;
   text-decoration: none;
-  border: 2px solid red;
- 
-
+  align-self: flex-end;
+  position: absolute;
+  top: 50%;
+  margin-right: 40px;
 }
 
 .feynman__photo {
   width: 867px;
   height: 637px;
- 
-  
-  
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
 }
-
 
 .kaufman { /* КАУФМАН */
   background-color: #1f1f1f;
@@ -284,26 +244,23 @@
   position: relative;
   flex-direction: column;
   padding-bottom: 90px;
-
-
 }
 
 .section-title_theme_dark { /* Заголовок Принципы обучения*/ 
   color: white;
   width: 60%;
-  border: solid 2px white;
   margin: auto;
   text-align: center;
   margin-top: 90px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
+  z-index: 2;
 }
 
 .section-subtitle_theme_dark { /* Подзаголовок от Дж. Кауфмана*/ 
   color: white;
   width: 60%;
-  border: solid 2px white;
   margin: auto;
   text-align: center;
   margin-top: 20px;
@@ -311,45 +268,114 @@
   font-size: 24px;
   font-weight: 400;
 }
+
 .table__theme_dark { /* Таблица полностью Дж. Кауфмана*/
-  border: solid 2px red;
   display: flex;
-  justify-content: center;
   z-index: 2;
   margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
   
 }
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark { /* Ячейка полностью Дж. Кауфмана*/
-  width: 200px;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
-  border: solid 2px red;
-  width: 200px;
+  width: 200px; 
 }
 
 .table__heading_theme_dark { /* Номер ячейки*/
+  color: white;
+}
+
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
   justify-content: left;
-  border: solid 2px blue;
-
 }
+
 .table__text_theme_dark { /* Текст внутри ячейки*/
-  border: solid 2px red;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: 400;
+  color: white;
 }
 
 .kaufman__triangle { /* Треугольник им. Дж. Кауфмана*/
-  
   position: absolute;
   right: -210px;
   width: 877px;
   height: 877px;
   z-index: 1;
+}
+
+/* Футер */
+.footer {
+  min-height: 350px;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+}
+
+.logo__place_footer { 
+  background-image: url(/images/logo_place_footer.svg);
+  width: 183px;
+  height: 35px;
+
+}
+.footer__columns {  /* Таблица Футера */
+ 
+  width: 90%;
+  color: white;
+  margin: 60px auto 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright { /*Левая колонка футера (таблица) */
+  flex-basis: 711px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footer__author { /* Моё имя */
+  margin-top: 18px;
+  margin-bottom: 18px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__column_content_info { /*Правая колонка футера главная концепция наставники  */
+}
+
+.footer__column-heading { /*Заглавие ссылок  */
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer__column-links { /*ССылки все вместе  */
+  margin-bottom: 16px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.column-link { /*ССылки по отдельности каждая  */
+  color: white;
+}
+
+.footer__column_content_social {  /*Правая колонка футера VK INSTA FB  */
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social-icon { /*Иконки VK INSTA FB  */
+  width: 16px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
 }
