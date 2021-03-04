@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark { /* Ячейка полностью Дж. Кауфмана*/
   color: white;
-  width: 200px; 
+  width: 200px;
   margin-top: 80px;
 }
 
