@@ -27,9 +27,9 @@
   height: 32px;
 }
 
-.logo__place_header { /* Логотип Яндекса */
+.logo_place_header { /* Логотип Яндекса */
   top: 30px;
-  margin-left: 64px;
+  left: 64px;
   position: absolute;
   z-index: 2;
 }
@@ -37,11 +37,11 @@
 .header__title { /* Научиться учиться */
   line-height: 96px;
   font-size: 102px;
-  font-weight: 600;
+  font-weight: 700;
   width: 730px;
   left: 64px;
   z-index: 2;
-  margin: 0;
+  margin: 64px;
 }
 
 .header__subtitle { /* Вопрос обучения */
@@ -49,15 +49,18 @@
   font-size: 18px;
   font-weight: 400;
   width: 388px;
-  margin-left: 64px;
+  left: 64px;
   bottom: 30px;
   position: absolute;
   z-index: 4;
-
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .header__link { /* Ссылка обучения */
   color:#2f80ed;
+  text-decoration: none;
+
 }
 
 .header__main-illustration { /* Картина "Опять двойка" */
@@ -89,12 +92,12 @@
   min-width: 784px;
 }
 
-.description__two-columns { /* Таблица полностью */
+.two-columns { /* Таблица полностью */
  display: flex;
  justify-content: space-around;
 }
 
-.description__two-columns_brief { /* Заголовок таблицы Главные проблемы в обучении */
+.two-columns__brief { /* Заголовок таблицы Главные проблемы в обучении */
   line-height: 1.2;
   font-size: 18px;
   font-weight: 400;
@@ -106,40 +109,42 @@
   left: 0;
 }
 
-.description__two-columns_main-text { /*Текст проблемы в обучении */
+.two-columns__main-text { /*Текст проблемы в обучении */
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
   width: 80%;
 }
 
-.description__two-columns_paragraph { 
+.two-columns__paragraph:nth-of-type(3) {
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
-  margin: 0;
+  margin: 30 0 0 0; /*Я пытался применить свойство :nth-of-type(3) или :nth-of-type(3), чтобы изюежать отступа у последней строки, но безуспешно. ПОдозреваю что дело в <p> Не могу обнулить его отступы.*/
 }
 
 .digits { /* СЕКЦИЯ ЦИФРЫ И ФАКТЫ */
   margin-top: 100px;
 }
 
-.digits__section-title { /* Заголовок всей секции Цифры и факты*/
+.section-title { /* Заголовок всей секции Цифры и факты*/
   line-height: 1.15;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 700;
   width: 60%;
   margin: 100px auto 20px auto;
   text-align: center;
 }
 
-.digits__section-subtitle { /* Подзаголовок всей секции Про учёбу и мозг*/
+.section-subtitle { /* Подзаголовок всей секции Про учёбу и мозг*/
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
   width: 60%;
   margin: auto;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .table { /* Таблица полностью */
@@ -162,13 +167,7 @@
 .table__text { /* Текст ячейки */
   line-height: 1.2;
   font-size: 18px;
-  font-weight: 400;
-  margin: 0;
-}
-
-.paragraph__cell-text {
-  margin-top: 20px;
-  margin-bottom: 0;
+  font-weight: 400;  /* Оставил default отступ для <p> чтобы абзац  "Всемирный банк 2017" отображался верно*/
 }
 
 /* Ричард Филлипс Фейнман */
@@ -178,12 +177,14 @@
   flex-direction: column;
   height: 790px;
   margin-top: 100px;
+  background-color: #f2f2f2;
+  padding-top: 100px;
 }
 
 .feynman__title {
   line-height: 1.15;
   font-size: 120px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   width: 648px;
   align-self: center;
@@ -197,6 +198,7 @@
   font-weight: 400;
   text-align: center;
   z-index: 2;
+  margin-top: 70px;
   }
 
 .feynman__link {
@@ -208,7 +210,7 @@
   align-self: flex-end;
   position: absolute;
   top: 50%;
-  margin-right: 40px;
+  right: 40px;
 }
 
 .feynman__photo {
@@ -237,7 +239,7 @@
   margin-top: 90px;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 700;
   z-index: 2;
 }
 
@@ -252,13 +254,14 @@
   font-weight: 400;
 }
 
-.table__theme_dark { /* Таблица полностью Дж. Кауфмана*/
+.table_theme_dark { /* Таблица полностью Дж. Кауфмана*/
   display: flex;
   z-index: 2;
   margin: auto;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
+  margin-bottom: 90px;
   
 }
 
@@ -276,7 +279,7 @@
 .table__heading {
   line-height: 1.15;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   justify-content: left;
   margin-bottom: 20px;
   margin-top: 0;
@@ -293,6 +296,7 @@
   width: 877px;
   height: 877px;
   z-index: 1;
+  background-image: url(../images/kaufman-triangle.svg);
 }
 
 /* Футер */
@@ -303,13 +307,13 @@
   justify-content: center;
 }
 
-.logo__place_footer { 
+.logo_place_footer { 
   background-image: url(../images/logo_place_footer.svg);
   width: 183px;
   height: 35px;
 }
+
 .footer__columns {  /* Таблица Футера */
- 
   width: 90%;
   color: white;
   margin: 60px auto 40px auto;
@@ -334,9 +338,10 @@
 
 .footer__column-heading { /*Заглавие ссылок  */
   margin-bottom: 20px;
+  margin-top: 0;
   line-height: 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .footer__column-links { /*ССылки все вместе  */
@@ -346,8 +351,13 @@
   font-weight: 400;
 }
 
-.column-link { /*ССылки по отдельности каждая  */
+.footer__column-link { /*Сcылки по отдельности каждая  */
   color: white;
+  text-decoration: none;
+  display: flex;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .footer__column_content_social {  /*Правая колонка футера VK INSTA FB  */
@@ -359,7 +369,7 @@
 .footer__social-icon { /*Иконки VK INSTA FB  */
   width: 16px;
   height: 16px;
-  display: flex;
-  flex-direction: row;
   text-decoration: none;
+  margin: auto;
+  padding-right: 10px;
 }
