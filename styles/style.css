@@ -9,7 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-
 .header { /* БЛОК HEADER */
   height: 100vh;
   min-height: 600px;
@@ -308,7 +307,6 @@
   background-image: url(../images/logo_place_footer.svg);
   width: 183px;
   height: 35px;
-
 }
 .footer__columns {  /* Таблица Футера */
  
