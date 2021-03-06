@@ -41,7 +41,9 @@
   width: 730px;
   left: 64px;
   z-index: 2;
-  margin: 64px;
+  margin-left: 64px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header__subtitle { /* Вопрос обучения */
@@ -116,11 +118,22 @@
   width: 80%;
 }
 
-.two-columns__paragraph:nth-of-type(3) {
+.two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: 400;
-  margin: 30 0 0 0; /*Я пытался применить свойство :nth-of-type(3) или :nth-of-type(3), чтобы изюежать отступа у последней строки, но безуспешно. ПОдозреваю что дело в <p> Не могу обнулить его отступы.*/
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 30px;
+  margin-left: 0; /*Я пытался применить свойство :nth-of-type(3) или :nth-of-type(3), чтобы изюежать отступа у последней строки, но безуспешно. ПОдозреваю что дело в <p> Не могу обнулить его отступы.*/
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.two-columns__span-accent {
+  font-weight: 600;
 }
 
 .digits { /* СЕКЦИЯ ЦИФРЫ И ФАКТЫ */
@@ -167,7 +180,12 @@
 .table__text { /* Текст ячейки */
   line-height: 1.2;
   font-size: 18px;
-  font-weight: 400;  /* Оставил default отступ для <p> чтобы абзац  "Всемирный банк 2017" отображался верно*/
+  font-weight: 400;
+  margin: 0 0 20px 0;  /* Оставил default отступ для <p> чтобы абзац  "Всемирный банк 2017" отображался верно*/
+}
+
+.table__text:last-child {
+  margin-bottom: 0;
 }
 
 /* Ричард Филлипс Фейнман */
@@ -199,6 +217,7 @@
   text-align: center;
   z-index: 2;
   margin-top: 70px;
+  margin-bottom: 0;
   }
 
 .feynman__link {
@@ -228,7 +247,6 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  padding-bottom: 90px;
 }
 
 .section-title_theme_dark { /* Заголовок Принципы обучения*/ 
@@ -262,7 +280,6 @@
   flex-wrap: wrap;
   padding: 0;
   margin-bottom: 90px;
-  
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -281,13 +298,11 @@
   font-size: 24px;
   font-weight: 700;
   justify-content: left;
-  margin-bottom: 20px;
   margin-top: 0;
 }
 
 .table__text_theme_dark { /* Текст внутри ячейки*/
   color: white;
-  margin: 0;
 }
 
 .kaufman__triangle { /* Треугольник им. Дж. Кауфмана*/
@@ -297,6 +312,7 @@
   height: 877px;
   z-index: 1;
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
 }
 
 /* Футер */
@@ -370,6 +386,5 @@
   width: 16px;
   height: 16px;
   text-decoration: none;
-  margin: auto;
-  padding-right: 10px;
+  margin: auto 10px auto 0;
 }
