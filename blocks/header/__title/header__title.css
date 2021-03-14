@@ -1,0 +1,11 @@
+.header__title { /* Научиться учиться */
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: 700;
+    width: 730px;
+    left: 64px;
+    z-index: 2;
+    margin-left: 64px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }

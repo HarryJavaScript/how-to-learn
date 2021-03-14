@@ -1,0 +1,10 @@
+.header__link { /* Ссылка обучения */
+    color:#2f80ed;
+    text-decoration: none;
+    transition: opacity ease-in-out 1.2s;
+  }
+  
+  .header__link:hover { /* Ссылка обучения */
+    opacity: .6;
+    transition: .5s ease-in-out;
+  }
