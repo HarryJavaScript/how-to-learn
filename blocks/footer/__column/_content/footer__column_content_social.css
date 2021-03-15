@@ -1,0 +1,5 @@
+.footer__column_content_social {  /*Правая колонка футера VK INSTA FB  */
+    right: 0;
+    display: flex;
+    flex-direction: column;
+  }

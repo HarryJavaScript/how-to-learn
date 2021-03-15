@@ -1,0 +1,14 @@
+.footer__column-link { /*Сcылки по отдельности каждая  */
+    color: white;
+    text-decoration: none;
+    display: flex;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: opacity ease-in-out 1.2s;
+  }
+
+  .footer__column-link:hover {
+    opacity: .4;
+    transition: .5s ease-in-out;
+  }

@@ -1,0 +1,8 @@
+.cards__item { /* Ячейка полностью */
+    border: red 2px solid;
+    margin-right: 100px;
+    margin-top: 60px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }

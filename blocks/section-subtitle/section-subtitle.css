@@ -1,0 +1,10 @@
+.section-subtitle { /* Подзаголовок всей секции Про учёбу и мозг*/
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 400;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }

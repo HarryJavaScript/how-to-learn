@@ -1,0 +1,6 @@
+.two-columns__main-text { /*Текст проблемы в обучении */
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 400;
+    width: 80%;
+  }

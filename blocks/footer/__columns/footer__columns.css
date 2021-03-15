@@ -1,0 +1,7 @@
+.footer__columns {  /* Таблица Футера */
+    width: 90%;
+    color: white;
+    margin: 60px auto 40px auto;
+    display: flex;
+    justify-content: space-between;
+  }

@@ -1,0 +1,6 @@
+.table__cell {  /* Ячейка таблицы полностью */
+    width: 250px;
+    margin-top: 60px;
+    margin-right: 0;
+    list-style-type: none;
+  }
