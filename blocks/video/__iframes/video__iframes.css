@@ -1,0 +1,5 @@
+.video__iframes {
+    display: inline-block;
+    margin: auto;
+    transform: translate(0, 50px); /* Оставил смещение конкретно видео, а не целой секции "Видео". В брифе уточнений не дано. */
+  }

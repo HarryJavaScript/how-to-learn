@@ -1,0 +1,11 @@
+.section-title_theme_dark { /* Заголовок Принципы обучения*/ 
+    color: white;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 90px;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: 700;
+    z-index: 2;
+  }

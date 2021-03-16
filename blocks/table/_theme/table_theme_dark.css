@@ -1,0 +1,9 @@
+.table_theme_dark { /* Таблица полностью Дж. Кауфмана*/
+    display: flex;
+    z-index: 2;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 90px;
+  }

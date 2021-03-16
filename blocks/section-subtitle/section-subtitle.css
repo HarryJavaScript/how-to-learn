@@ -1,3 +1,5 @@
+@import url(_theme/section-subtitle_theme_dark.css);
+
 .section-subtitle { /* Подзаголовок всей секции Про учёбу и мозг*/
     line-height: 34px;
     font-size: 24px;
