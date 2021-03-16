@@ -1,8 +1,18 @@
-.cards__item { /* Ячейка полностью */
-    border: red 2px solid;
-    margin-right: 100px;
-    margin-top: 60px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
+.cards__item {
+  margin-left: 100px;
+  margin-top: 60px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
+  .cards__item:nth-child(3n-2) {
+    margin-left: 0;
   }
+
+  /* .cards__item {  /* Ячейка таблицы полностью */
+    /* width: 200px; */
+    /* margin-top: 60px; */
+    /* margin-right: 100px; */
+    /* list-style-type: none; */
