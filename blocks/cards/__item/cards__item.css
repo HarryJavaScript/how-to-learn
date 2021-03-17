@@ -10,9 +10,3 @@
   .cards__item:nth-child(3n-2) {
     margin-left: 0;
   }
-
-  /* .cards__item {  /* Ячейка таблицы полностью */
-    /* width: 200px; */
-    /* margin-top: 60px; */
-    /* margin-right: 100px; */
-    /* list-style-type: none; */

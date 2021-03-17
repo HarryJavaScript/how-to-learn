@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../how-to-learn/vendor/normalize.css">
   <link rel="stylesheet" href="./pages/index.css">
   <title>Научиться учиться</title>
 </head>
@@ -15,9 +14,7 @@
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?<!-- Вопрос обучения -->
       <a class="header__link" href="#">Узнать &rarr;</a></p><!-- Ссылка обучения!-->
       <img class="header__main-illustration" src="./images/header-image.png" alt="Картина Опять двойка"><!-- Картина "Опять двойка" -->
-      <div class="rotation">
-        <div class="rotation header__square-pic"></div><!-- Блок создан внутри header, т.к. если его разместить просто внутри body, то придётся ставить overflow: hidden для всей страницы, что некорректно.> -->
-      </div>
+      <div class="rotation header__square-pic"></div><!-- Блок создан внутри header, т.к. если его разместить просто внутри body, то придётся ставить overflow: hidden для всей страницы, что некорректно.> -->
     </header>
   <main class="content">
     <section class="description">
@@ -36,28 +33,28 @@
       <ul class="cards"><!-- Табличка Барбары Оакли полностью -->
         <li class="cards__item">
           <img class="cards__image" src="./images/cards-attention.png" alt="Картинка Два вида внимания"><!-- Изображение внутри таблицы Барбары-->
-          <div class="cards__title">Два вида внимания</div><!-- Подзагловок внутри ячейки таблицы Барбары-->
-          <div class ="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеяное мышление.</div><!-- Текст внутри ячейки таблицы Барбары-->
+          <h3 class="cards__title">Два вида внимания</h3><!-- Подзагловок внутри ячейки таблицы Барбары-->
+          <p class ="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеяное мышление.</p><!-- Текст внутри ячейки таблицы Барбары-->
         </li>
         <li class="cards__item">
           <img class="cards__image" src="./images/cards-recall.png" alt="Картинка Воспоминания">
-          <div class="cards__title">Recall</div><!-- Подзагловок внутри ячейки таблицы Барбары-->
-          <div class ="cards__description">Вспоминайте изученное - это позволит соединить разрозненные порции памяти.</div>
+          <h3 class="cards__title">Recall</h3><!-- Подзагловок внутри ячейки таблицы Барбары-->
+          <p class ="cards__description">Вспоминайте изученное - это позволит соединить разрозненные порции памяти.</p>
         </li>
         <li class="cards__item">
           <img class="cards__image" src="./images/cards-interliving.png" alt="Картинка Интерливинг">
-          <div class="cards__title">Интерливинг</div><!-- Подзагловок внутри ячейки таблицы Барбары-->
-          <div class ="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</div>
+          <h3 class="cards__title">Интерливинг</h3><!-- Подзагловок внутри ячейки таблицы Барбары-->
+          <p class ="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
         </li>
         <li class="cards__item">
           <img class="cards__image" src="./images/cards-question.png" alt="Картинка Вопросы">
-          <div class="cards__title">Вопросы</div><!-- Подзагловок внутри ячейки таблицы Барбары-->
-          <div class ="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</div>
+          <h3 class="cards__title">Вопросы</h3><!-- Подзагловок внутри ячейки таблицы Барбары-->
+          <p class ="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
         </li>
         <li class="cards__item">
           <img class="cards__image" src="./images/cards-competence.png" alt="Картинка Иллюзия компетентности">
-          <div class="cards__title">Иллюзия компетентности</div><!-- Подзагловок внутри ячейки таблицы Барбары-->
-          <div class ="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</div>
+          <h3 class="cards__title">Иллюзия компетентности</h3><!-- Подзагловок внутри ячейки таблицы Барбары-->
+          <p class ="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
         </li>
       </ul>
     </section>
@@ -65,9 +62,9 @@
       <h2 class="section-title">Видео на TED</h2>
       <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
       <div class="video__iframes">
-        <iframe class="video__iframe" width="560" height="315" src="https://www.youtube.com/embed/5MgBikgcWnY"
+        <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video__iframe" width="560" height="315" src="https://www.youtube.com/embed/arj7oStGLkU"
+        <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </section>
@@ -137,12 +134,9 @@
         <a class="khan__buy-link" href="https://www.ozon.ru/context/detail/id/31700837/" target="blank">Купить книгу &rarr;</a>
       </div>
     </div>
-
   </section>
   <section class="kaufman">
-    <div class="rotation">
       <div class="rotation kaufman__triangle"></div>
-    </div>
     <h2 class="section-title section-title_theme_dark">Принципы обучения</h2><!-- Кауфман -->
     <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p><!-- Подзаголовок от Кауфмана -->
     <ul class="table table_theme_dark"> <!--Таблица полностью -->
@@ -191,16 +185,24 @@
   <section class="resources">
     <h2 class="section-title">Полезные ресурсы</h2>
     <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-    <nav class="resources resources__logo-zone">
-      <a class="resources resources__logo" href="https://arzamas.academy/" target="blank">
-      <img src="./images/resources-arzamas.svg" alt="Arzamas"></a><!-- Осознанно прописываю в атрибуте alt текст отличный от языка сайта, т.к. это название. -->
-      <a class="resources resources__logo" href="https://nplus1.ru/" target="blank">
-      <img src="./images/resources-n1.svg" alt="N + 1"></a>
-      <a class="resources resources__logo" href="https://strelkamag.com/ru" target="blank">
-      <img src="./images/resources-strelka.svg" alt="STRELKA"></a>
-      <a class="resources resources__logo" href="https://polka.academy/" target="blank">
-      <img src="./images/resources-polka.svg" alt="ПОЛКА"></a>
-    </nav>
+    <ul class="resources resources__logo-zone">
+      <li>
+        <a class="resources resources__logo" href="https://arzamas.academy/" target="blank">
+        <img src="./images/resources-arzamas.svg" alt="Арзамас"></a><!-- Осознанно прописываю в атрибуте alt текст отличный от языка сайта, т.к. это название. -->
+      </li>
+      <li>
+        <a class="resources resources__logo" href="https://nplus1.ru/" target="blank">
+        <img src="./images/resources-n1.svg" alt="Эн плюс один"></a>
+      </li>
+      <li>
+        <a class="resources resources__logo" href="https://strelkamag.com/ru" target="blank">
+        <img src="./images/resources-strelka.svg" alt="СТРЕЛКА"></a>
+      </li>
+      <li>
+        <a class="resources resources__logo" href="https://polka.academy/" target="blank">
+        <img src="./images/resources-polka.svg" alt="ПОЛКА"></a>
+      </li>
+    </ul>
   </section>
   </main>
   <footer class="footer">
