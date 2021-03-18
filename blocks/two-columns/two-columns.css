@@ -1,7 +1,7 @@
 .two-columns { /* Таблица полностью */
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
+    margin: 100px auto auto auto;
     width: 80%;
     min-width: 784px;
    }
