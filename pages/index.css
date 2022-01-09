@@ -67,3 +67,6 @@
 @import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
 @import url(../blocks/video/__iframe/video__iframe.css);
 @import url(../blocks/video/__iframes/video__iframes.css);
+
+@import url(../blocks/scroll/scroll_progress/scroll_progress.css);
+@import url(../blocks/scroll/scroll_progress__text/scroll_progress__text.css);
